@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    //Problema: Peça para o usuário informar um número inteiro.
+    //Escreva todos os números na tela, até o número informado pelo usuário, colocando um número em cada linha e começando do número 1!
+
+    //Entrada
+    const num = parseInt(prompt('Informe um número inteiro:'));
+    let numerosAteNum = []
+    //Processamento
+    for (let index = num; index >= 1; index--) {
+        numerosAteNum.push(index)
+    }
+    numerosAteNum.sort((a,b) => a-b)
+    //Saída
+    alert(numerosAteNum.join('\n'))
+</script>
