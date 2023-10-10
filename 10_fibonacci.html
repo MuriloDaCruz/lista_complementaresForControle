@@ -8,12 +8,15 @@
     */
 
     //ENTRADA
-
-    
+    let fibonacci = [0,1];
+    const quantidade = Number(prompt('Informe quantos números deseja colocar na sequência de fibonacci?'))
     //PROCESSAMENTO
-    
+    for (let index = 1; index <= quantidade; index++) {
+        //aqui somamos o ultimo mais o penultimo e adiconamos a array
+        fibonacci.push(fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2])
+    }
     
     //SAÍDA
-    
+    alert(fibonacci.join(', '));
 
 </script>
